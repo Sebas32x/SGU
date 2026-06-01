@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Datos/Datos.csproj" />
+  <Project Path="Logica/Logica.csproj" />
+  <Project Path="Sesion/Sesion.csproj" />
+  <Project Path="Sistema/Sistema.csproj" />
+  <Project Path="Vista/Vista.csproj" />
+</Solution>
