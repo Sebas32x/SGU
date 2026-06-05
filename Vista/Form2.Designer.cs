@@ -29,84 +29,84 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            button10 = new Button();
-            button9 = new Button();
-            button8 = new Button();
-            button7 = new Button();
+            btn10VolverAtras = new Button();
+            btnModificacion = new Button();
+            btnRealizarBajaPersona = new Button();
+            btnRealizarALtaPersona = new Button();
             label15 = new Label();
             label11 = new Label();
-            textBox5 = new TextBox();
+            txtDebeCambiarPassword = new TextBox();
             label10 = new Label();
             label9 = new Label();
-            textBox3 = new TextBox();
+            txtDiasValidezPassword = new TextBox();
             label8 = new Label();
-            button6 = new Button();
-            button5 = new Button();
+            btnRealizarBajaUsuario = new Button();
+            btnRealizarALtaUsuario = new Button();
             label7 = new Label();
-            comboBox3 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
+            cmbNombresUsuarios = new ComboBox();
+            cmbPermisos = new ComboBox();
+            cmbRoles = new ComboBox();
             label5 = new Label();
             label4 = new Label();
             pictureBox1 = new PictureBox();
-            button3 = new Button();
+            btnSeccionRemoverRolPermiso = new Button();
             label1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button4 = new Button();
+            btnSeccionOtorgarRolPermiso = new Button();
+            btnSeccionRegistrar = new Button();
+            btnSeccionUserABM = new Button();
             panel1 = new Panel();
-            comboBox4 = new ComboBox();
-            textBox1 = new TextBox();
+            cmbPersonas = new ComboBox();
+            txtNombreUsuario = new TextBox();
             label2 = new Label();
-            textBox6 = new TextBox();
-            textBox2 = new TextBox();
+            txtEstadoActividadUsuario = new TextBox();
+            txtPassword = new TextBox();
             label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // button10
+            // btn10VolverAtras
             // 
-            button10.Location = new Point(239, 36);
-            button10.Name = "button10";
-            button10.Size = new Size(75, 23);
-            button10.TabIndex = 65;
-            button10.Text = "<-";
-            button10.UseVisualStyleBackColor = true;
-            button10.Click += button10_Click;
+            btn10VolverAtras.Location = new Point(239, 36);
+            btn10VolverAtras.Name = "btn10VolverAtras";
+            btn10VolverAtras.Size = new Size(75, 23);
+            btn10VolverAtras.TabIndex = 65;
+            btn10VolverAtras.Text = "<-";
+            btn10VolverAtras.UseVisualStyleBackColor = true;
+            btn10VolverAtras.Click += button10_Click;
             // 
-            // button9
+            // btnModificacion
             // 
-            button9.BackColor = SystemColors.Highlight;
-            button9.Location = new Point(670, 339);
-            button9.Name = "button9";
-            button9.Size = new Size(109, 37);
-            button9.TabIndex = 64;
-            button9.Text = "MODIFICACION";
-            button9.UseVisualStyleBackColor = false;
-            button9.Click += button9_Click;
+            btnModificacion.BackColor = SystemColors.Highlight;
+            btnModificacion.Location = new Point(670, 339);
+            btnModificacion.Name = "btnModificacion";
+            btnModificacion.Size = new Size(109, 37);
+            btnModificacion.TabIndex = 64;
+            btnModificacion.Text = "MODIFICACION";
+            btnModificacion.UseVisualStyleBackColor = false;
+            btnModificacion.Click += button9_Click;
             // 
-            // button8
+            // btnRealizarBajaPersona
             // 
-            button8.BackColor = SystemColors.Highlight;
-            button8.Location = new Point(670, 281);
-            button8.Name = "button8";
-            button8.Size = new Size(93, 37);
-            button8.TabIndex = 63;
-            button8.Text = "BAJA";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
+            btnRealizarBajaPersona.BackColor = SystemColors.Highlight;
+            btnRealizarBajaPersona.Location = new Point(670, 281);
+            btnRealizarBajaPersona.Name = "btnRealizarBajaPersona";
+            btnRealizarBajaPersona.Size = new Size(93, 37);
+            btnRealizarBajaPersona.TabIndex = 63;
+            btnRealizarBajaPersona.Text = "BAJA";
+            btnRealizarBajaPersona.UseVisualStyleBackColor = false;
+            btnRealizarBajaPersona.Click += button8_Click;
             // 
-            // button7
+            // btnRealizarALtaPersona
             // 
-            button7.BackColor = SystemColors.Highlight;
-            button7.Location = new Point(670, 234);
-            button7.Name = "button7";
-            button7.Size = new Size(93, 41);
-            button7.TabIndex = 62;
-            button7.Text = "ALTA";
-            button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
+            btnRealizarALtaPersona.BackColor = SystemColors.Highlight;
+            btnRealizarALtaPersona.Location = new Point(670, 234);
+            btnRealizarALtaPersona.Name = "btnRealizarALtaPersona";
+            btnRealizarALtaPersona.Size = new Size(93, 41);
+            btnRealizarALtaPersona.TabIndex = 62;
+            btnRealizarALtaPersona.Text = "ALTA";
+            btnRealizarALtaPersona.UseVisualStyleBackColor = false;
+            btnRealizarALtaPersona.Click += button7_Click;
             // 
             // label15
             // 
@@ -126,12 +126,12 @@
             label11.TabIndex = 52;
             label11.Text = "Activo 0,1";
             // 
-            // textBox5
+            // txtDebeCambiarPassword
             // 
-            textBox5.Location = new Point(417, 311);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 51;
+            txtDebeCambiarPassword.Location = new Point(417, 311);
+            txtDebeCambiarPassword.Name = "txtDebeCambiarPassword";
+            txtDebeCambiarPassword.Size = new Size(100, 23);
+            txtDebeCambiarPassword.TabIndex = 51;
             // 
             // label10
             // 
@@ -151,12 +151,12 @@
             label9.TabIndex = 49;
             label9.Text = "DiasValidezPass";
             // 
-            // textBox3
+            // txtDiasValidezPassword
             // 
-            textBox3.Location = new Point(280, 311);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 48;
+            txtDiasValidezPassword.Location = new Point(280, 311);
+            txtDiasValidezPassword.Name = "txtDiasValidezPassword";
+            txtDiasValidezPassword.Size = new Size(100, 23);
+            txtDiasValidezPassword.TabIndex = 48;
             // 
             // label8
             // 
@@ -166,27 +166,27 @@
             label8.Size = new Size(0, 15);
             label8.TabIndex = 47;
             // 
-            // button6
+            // btnRealizarBajaUsuario
             // 
-            button6.BackColor = SystemColors.Highlight;
-            button6.Location = new Point(603, 147);
-            button6.Name = "button6";
-            button6.Size = new Size(150, 42);
-            button6.TabIndex = 46;
-            button6.Text = "BAJA";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
+            btnRealizarBajaUsuario.BackColor = SystemColors.Highlight;
+            btnRealizarBajaUsuario.Location = new Point(603, 147);
+            btnRealizarBajaUsuario.Name = "btnRealizarBajaUsuario";
+            btnRealizarBajaUsuario.Size = new Size(150, 42);
+            btnRealizarBajaUsuario.TabIndex = 46;
+            btnRealizarBajaUsuario.Text = "BAJA";
+            btnRealizarBajaUsuario.UseVisualStyleBackColor = false;
+            btnRealizarBajaUsuario.Click += button6_Click;
             // 
-            // button5
+            // btnRealizarALtaUsuario
             // 
-            button5.BackColor = SystemColors.Highlight;
-            button5.Location = new Point(603, 89);
-            button5.Name = "button5";
-            button5.Size = new Size(150, 45);
-            button5.TabIndex = 45;
-            button5.Text = "ALTA";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click;
+            btnRealizarALtaUsuario.BackColor = SystemColors.Highlight;
+            btnRealizarALtaUsuario.Location = new Point(603, 89);
+            btnRealizarALtaUsuario.Name = "btnRealizarALtaUsuario";
+            btnRealizarALtaUsuario.Size = new Size(150, 45);
+            btnRealizarALtaUsuario.TabIndex = 45;
+            btnRealizarALtaUsuario.Text = "ALTA";
+            btnRealizarALtaUsuario.UseVisualStyleBackColor = false;
+            btnRealizarALtaUsuario.Click += button5_Click;
             // 
             // label7
             // 
@@ -197,29 +197,29 @@
             label7.TabIndex = 44;
             label7.Text = "Usuario";
             // 
-            // comboBox3
+            // cmbNombresUsuarios
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(258, 101);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(121, 23);
-            comboBox3.TabIndex = 43;
+            cmbNombresUsuarios.FormattingEnabled = true;
+            cmbNombresUsuarios.Location = new Point(258, 101);
+            cmbNombresUsuarios.Name = "cmbNombresUsuarios";
+            cmbNombresUsuarios.Size = new Size(121, 23);
+            cmbNombresUsuarios.TabIndex = 43;
             // 
-            // comboBox2
+            // cmbPermisos
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(259, 158);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 42;
+            cmbPermisos.FormattingEnabled = true;
+            cmbPermisos.Location = new Point(259, 158);
+            cmbPermisos.Name = "cmbPermisos";
+            cmbPermisos.Size = new Size(121, 23);
+            cmbPermisos.TabIndex = 42;
             // 
-            // comboBox1
+            // cmbRoles
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(414, 101);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 41;
+            cmbRoles.FormattingEnabled = true;
+            cmbRoles.Location = new Point(414, 101);
+            cmbRoles.Name = "cmbRoles";
+            cmbRoles.Size = new Size(121, 23);
+            cmbRoles.TabIndex = 41;
             // 
             // label5
             // 
@@ -249,16 +249,16 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // button3
+            // btnSeccionRemoverRolPermiso
             // 
-            button3.BackColor = SystemColors.GradientActiveCaption;
-            button3.Location = new Point(3, 192);
-            button3.Name = "button3";
-            button3.Size = new Size(268, 82);
-            button3.TabIndex = 2;
-            button3.Text = "Remo:Rol/Per";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            btnSeccionRemoverRolPermiso.BackColor = SystemColors.GradientActiveCaption;
+            btnSeccionRemoverRolPermiso.Location = new Point(3, 192);
+            btnSeccionRemoverRolPermiso.Name = "btnSeccionRemoverRolPermiso";
+            btnSeccionRemoverRolPermiso.Size = new Size(243, 82);
+            btnSeccionRemoverRolPermiso.TabIndex = 2;
+            btnSeccionRemoverRolPermiso.Text = "Remo:Rol/Per";
+            btnSeccionRemoverRolPermiso.UseVisualStyleBackColor = false;
+            btnSeccionRemoverRolPermiso.Click += button3_Click;
             // 
             // label1
             // 
@@ -270,66 +270,66 @@
             label1.TabIndex = 37;
             label1.Text = "Usuario Administrador";
             // 
-            // button1
+            // btnSeccionOtorgarRolPermiso
             // 
-            button1.BackColor = SystemColors.GradientInactiveCaption;
-            button1.Location = new Point(3, 122);
-            button1.Name = "button1";
-            button1.Size = new Size(239, 80);
-            button1.TabIndex = 2;
-            button1.Text = "Otorgar:Rol/Per";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnSeccionOtorgarRolPermiso.BackColor = SystemColors.GradientInactiveCaption;
+            btnSeccionOtorgarRolPermiso.Location = new Point(3, 122);
+            btnSeccionOtorgarRolPermiso.Name = "btnSeccionOtorgarRolPermiso";
+            btnSeccionOtorgarRolPermiso.Size = new Size(239, 80);
+            btnSeccionOtorgarRolPermiso.TabIndex = 2;
+            btnSeccionOtorgarRolPermiso.Text = "Otorgar:Rol/Per";
+            btnSeccionOtorgarRolPermiso.UseVisualStyleBackColor = false;
+            btnSeccionOtorgarRolPermiso.Click += button1_Click;
             // 
-            // button2
+            // btnSeccionRegistrar
             // 
-            button2.BackColor = SystemColors.GradientActiveCaption;
-            button2.ImageAlign = ContentAlignment.TopCenter;
-            button2.Location = new Point(3, 270);
-            button2.Name = "button2";
-            button2.Size = new Size(242, 95);
-            button2.TabIndex = 2;
-            button2.Text = "REGISTAR";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnSeccionRegistrar.BackColor = SystemColors.GradientActiveCaption;
+            btnSeccionRegistrar.ImageAlign = ContentAlignment.TopCenter;
+            btnSeccionRegistrar.Location = new Point(3, 270);
+            btnSeccionRegistrar.Name = "btnSeccionRegistrar";
+            btnSeccionRegistrar.Size = new Size(242, 95);
+            btnSeccionRegistrar.TabIndex = 2;
+            btnSeccionRegistrar.Text = "REGISTAR";
+            btnSeccionRegistrar.UseVisualStyleBackColor = false;
+            btnSeccionRegistrar.Click += button2_Click;
             // 
-            // button4
+            // btnSeccionUserABM
             // 
-            button4.Location = new Point(-5, 354);
-            button4.Name = "button4";
-            button4.Size = new Size(266, 92);
-            button4.TabIndex = 37;
-            button4.Text = "A/B/M user";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            btnSeccionUserABM.Location = new Point(-5, 354);
+            btnSeccionUserABM.Name = "btnSeccionUserABM";
+            btnSeccionUserABM.Size = new Size(250, 92);
+            btnSeccionUserABM.TabIndex = 37;
+            btnSeccionUserABM.Text = "A/B/M user";
+            btnSeccionUserABM.UseVisualStyleBackColor = true;
+            btnSeccionUserABM.Click += button4_Click;
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.MenuHighlight;
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btnSeccionUserABM);
+            panel1.Controls.Add(btnSeccionOtorgarRolPermiso);
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button3);
+            panel1.Controls.Add(btnSeccionRegistrar);
+            panel1.Controls.Add(btnSeccionRemoverRolPermiso);
             panel1.Location = new Point(-9, 2);
             panel1.Name = "panel1";
             panel1.Size = new Size(242, 446);
             panel1.TabIndex = 38;
             // 
-            // comboBox4
+            // cmbPersonas
             // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(268, 234);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(121, 23);
-            comboBox4.TabIndex = 66;
+            cmbPersonas.FormattingEnabled = true;
+            cmbPersonas.Location = new Point(268, 234);
+            cmbPersonas.Name = "cmbPersonas";
+            cmbPersonas.Size = new Size(121, 23);
+            cmbPersonas.TabIndex = 66;
             // 
-            // textBox1
+            // txtNombreUsuario
             // 
-            textBox1.Location = new Point(430, 234);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 67;
+            txtNombreUsuario.Location = new Point(430, 234);
+            txtNombreUsuario.Name = "txtNombreUsuario";
+            txtNombreUsuario.Size = new Size(100, 23);
+            txtNombreUsuario.TabIndex = 67;
             // 
             // label2
             // 
@@ -340,19 +340,19 @@
             label2.TabIndex = 68;
             label2.Text = "nombre_usuario";
             // 
-            // textBox6
+            // txtEstadoActividadUsuario
             // 
-            textBox6.Location = new Point(288, 370);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 53;
+            txtEstadoActividadUsuario.Location = new Point(288, 370);
+            txtEstadoActividadUsuario.Name = "txtEstadoActividadUsuario";
+            txtEstadoActividadUsuario.Size = new Size(100, 23);
+            txtEstadoActividadUsuario.TabIndex = 53;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(559, 306);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 69;
+            txtPassword.Location = new Point(559, 306);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(100, 23);
+            txtPassword.TabIndex = 69;
             // 
             // label3
             // 
@@ -369,28 +369,28 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(txtPassword);
             Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox4);
-            Controls.Add(button10);
-            Controls.Add(button9);
-            Controls.Add(button8);
-            Controls.Add(button7);
+            Controls.Add(txtNombreUsuario);
+            Controls.Add(cmbPersonas);
+            Controls.Add(btn10VolverAtras);
+            Controls.Add(btnModificacion);
+            Controls.Add(btnRealizarBajaPersona);
+            Controls.Add(btnRealizarALtaPersona);
             Controls.Add(label15);
-            Controls.Add(textBox6);
+            Controls.Add(txtEstadoActividadUsuario);
             Controls.Add(label11);
-            Controls.Add(textBox5);
+            Controls.Add(txtDebeCambiarPassword);
             Controls.Add(label10);
             Controls.Add(label9);
-            Controls.Add(textBox3);
+            Controls.Add(txtDiasValidezPassword);
             Controls.Add(label8);
-            Controls.Add(button6);
-            Controls.Add(button5);
+            Controls.Add(btnRealizarBajaUsuario);
+            Controls.Add(btnRealizarALtaUsuario);
             Controls.Add(label7);
-            Controls.Add(comboBox3);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbNombresUsuarios);
+            Controls.Add(cmbPermisos);
+            Controls.Add(cmbRoles);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(panel1);
@@ -406,37 +406,37 @@
 
         #endregion
 
-        private Button button10;
-        private Button button9;
-        private Button button8;
-        private Button button7;
+        private Button btn10VolverAtras;
+        private Button btnModificacion;
+        private Button btnRealizarBajaPersona;
+        private Button btnRealizarALtaPersona;
         private Label label15;
         private Label label11;
-        private TextBox textBox5;
+        private TextBox txtDebeCambiarPassword;
         private Label label10;
         private Label label9;
-        private TextBox textBox3;
+        private TextBox txtDiasValidezPassword;
         private Label label8;
-        private Button button6;
-        private Button button5;
+        private Button btnRealizarBajaUsuario;
+        private Button btnRealizarALtaUsuario;
         private Label label7;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
+        private ComboBox cmbNombresUsuarios;
+        private ComboBox cmbPermisos;
+        private ComboBox cmbRoles;
         private Label label5;
         private Label label4;
         private PictureBox pictureBox1;
-        private Button button3;
+        private Button btnSeccionRemoverRolPermiso;
         private Label label1;
-        private Button button1;
-        private Button button2;
-        private Button button4;
+        private Button btnSeccionOtorgarRolPermiso;
+        private Button btnSeccionRegistrar;
+        private Button btnSeccionUserABM;
         private Panel panel1;
-        private ComboBox comboBox4;
-        private TextBox textBox1;
+        private ComboBox cmbPersonas;
+        private TextBox txtNombreUsuario;
         private Label label2;
-        private TextBox textBox6;
-        private TextBox textBox2;
+        private TextBox txtEstadoActividadUsuario;
+        private TextBox txtPassword;
         private Label label3;
     }
 }

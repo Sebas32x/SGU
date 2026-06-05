@@ -23,13 +23,13 @@ namespace Vista
             try
             {
 
-                if (!int.TryParse(textBox3.Text, out int dni))
+                if (!int.TryParse(txtNumeroDniPersona.Text, out int dni))
                 {
                     MessageBox.Show("Por favor, ingrese un DNI válido (solo números).", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                if (!int.TryParse(textBox9.Text, out int altura))
+                if (!int.TryParse(txtAlturaDomicilio.Text, out int altura))
                 {
                     MessageBox.Show("Por favor, ingrese una altura de calle válida.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
@@ -42,29 +42,29 @@ namespace Vista
                 }
 
 
-                if (comboBox1.SelectedValue == null || comboBox2.SelectedValue == null || comboBox3.SelectedValue == null)
+                if (cmbProvincias.SelectedValue == null || cmbLocalidades.SelectedValue == null || cmbPartidos.SelectedValue == null)
                 {
                     MessageBox.Show("Por favor, seleccione la Provincia, Partido y Localidad.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
 
-                int idProvincia = Convert.ToInt32(comboBox1.SelectedValue);
-                int idLocalidad = Convert.ToInt32(comboBox2.SelectedValue);
-                int idPartido = Convert.ToInt32(comboBox3.SelectedValue);
+                int idProvincia = Convert.ToInt32(cmbProvincias.SelectedValue);
+                int idLocalidad = Convert.ToInt32(cmbLocalidades.SelectedValue);
+                int idPartido = Convert.ToInt32(cmbPartidos.SelectedValue);
 
 
                 ViviedaDTO dto = new ViviedaDTO
                 {
-                    Nombre = textBox1.Text.Trim(),
-                    Apellido = textBox2.Text.Trim(),
+                    Nombre = txtNombrePersona.Text.Trim(),
+                    Apellido = txtApellidoPersona.Text.Trim(),
                     DNI = dni,
-                    Imagen_URL = textBox5.Text.Trim(),
-                    Fecha_nac = dateTimePicker1.Value,
-                    Calle = textBox10.Text.Trim(),
+                    Imagen_URL = txtImagenUrlPersona.Text.Trim(),
+                    Fecha_nac = dtmFechaNacimiento.Value,
+                    Calle = txtNombreCalleDomicilio.Text.Trim(),
                     Altura = altura,
-                    Piso = textBox8.Text.Trim(),
-                    Depa = textBox7.Text.Trim(),
+                    Piso = txtPisoDomicilio.Text.Trim(),
+                    Depa = txtDepartamentoDomicilio.Text.Trim(),
                     Codigo_Postal = codigoPostal,
                     Id_Provincia = idProvincia,
                     Id_Localidad = idLocalidad,
@@ -88,18 +88,18 @@ namespace Vista
         private void Form3_Load(object sender, EventArgs e)
         {
             Registrar f = new Registrar();
-            comboBox1.DataSource = f.ObtenerProvincia();
-            comboBox1.DisplayMember = "Nombre_prov";
-            comboBox1.ValueMember = "Id_Provincia";
+            cmbProvincias.DataSource = f.ObtenerProvincia();
+            cmbProvincias.DisplayMember = "Nombre_prov";
+            cmbProvincias.ValueMember = "Id_Provincia";
 
 
-            comboBox2.DataSource = f.ObtenerLocalidad();
-            comboBox2.DisplayMember = "Nombre_Local";
-            comboBox2.ValueMember = "Id_Localidad";
+            cmbLocalidades.DataSource = f.ObtenerLocalidad();
+            cmbLocalidades.DisplayMember = "Nombre_Local";
+            cmbLocalidades.ValueMember = "Id_Localidad";
 
-            comboBox3.DataSource = f.ObtenerPartido();
-            comboBox3.DisplayMember = "Nombre_partido";
-            comboBox3.ValueMember = "Id_Partido";
+            cmbPartidos.DataSource = f.ObtenerPartido();
+            cmbPartidos.DisplayMember = "Nombre_partido";
+            cmbPartidos.ValueMember = "Id_Partido";
         }
 
         private void button2_Click(object sender, EventArgs e)

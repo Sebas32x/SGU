@@ -30,32 +30,32 @@
         {
             textBox4 = new TextBox();
             label11 = new Label();
-            comboBox3 = new ComboBox();
+            cmbPartidos = new ComboBox();
             label13 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            button2 = new Button();
-            comboBox2 = new ComboBox();
+            dtmFechaNacimiento = new DateTimePicker();
+            btnVolverAtras = new Button();
+            cmbLocalidades = new ComboBox();
             label12 = new Label();
-            comboBox1 = new ComboBox();
+            cmbProvincias = new ComboBox();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            button1 = new Button();
+            txtDepartamentoDomicilio = new TextBox();
+            txtPisoDomicilio = new TextBox();
+            txtAlturaDomicilio = new TextBox();
+            txtNombreCalleDomicilio = new TextBox();
+            btnRegistrar = new Button();
             label4 = new Label();
             label5 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            textBox5 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtImagenUrlPersona = new TextBox();
+            txtNumeroDniPersona = new TextBox();
+            txtApellidoPersona = new TextBox();
+            txtNombrePersona = new TextBox();
             SuspendLayout();
             // 
             // textBox4
@@ -64,6 +64,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(117, 23);
             textBox4.TabIndex = 63;
+            textBox4.Text = "txtCodigoPostalDomicilio";
             // 
             // label11
             // 
@@ -74,13 +75,13 @@
             label11.TabIndex = 62;
             label11.Text = "CodigPostal";
             // 
-            // comboBox3
+            // cmbPartidos
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(452, 340);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(121, 23);
-            comboBox3.TabIndex = 61;
+            cmbPartidos.FormattingEnabled = true;
+            cmbPartidos.Location = new Point(452, 340);
+            cmbPartidos.Name = "cmbPartidos";
+            cmbPartidos.Size = new Size(121, 23);
+            cmbPartidos.TabIndex = 61;
             // 
             // label13
             // 
@@ -91,30 +92,30 @@
             label13.TabIndex = 60;
             label13.Text = "partido";
             // 
-            // dateTimePicker1
+            // dtmFechaNacimiento
             // 
-            dateTimePicker1.Location = new Point(36, 275);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(232, 23);
-            dateTimePicker1.TabIndex = 59;
+            dtmFechaNacimiento.Location = new Point(36, 275);
+            dtmFechaNacimiento.Name = "dtmFechaNacimiento";
+            dtmFechaNacimiento.Size = new Size(232, 23);
+            dtmFechaNacimiento.TabIndex = 59;
             // 
-            // button2
+            // btnVolverAtras
             // 
-            button2.Location = new Point(32, 19);
-            button2.Name = "button2";
-            button2.Size = new Size(65, 31);
-            button2.TabIndex = 58;
-            button2.Text = "<-";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnVolverAtras.Location = new Point(32, 19);
+            btnVolverAtras.Name = "btnVolverAtras";
+            btnVolverAtras.Size = new Size(65, 31);
+            btnVolverAtras.TabIndex = 58;
+            btnVolverAtras.Text = "<-";
+            btnVolverAtras.UseVisualStyleBackColor = true;
+            btnVolverAtras.Click += button2_Click;
             // 
-            // comboBox2
+            // cmbLocalidades
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(456, 259);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 57;
+            cmbLocalidades.FormattingEnabled = true;
+            cmbLocalidades.Location = new Point(456, 259);
+            cmbLocalidades.Name = "cmbLocalidades";
+            cmbLocalidades.Size = new Size(121, 23);
+            cmbLocalidades.TabIndex = 57;
             // 
             // label12
             // 
@@ -125,13 +126,13 @@
             label12.TabIndex = 56;
             label12.Text = "provincia";
             // 
-            // comboBox1
+            // cmbProvincias
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(452, 294);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 55;
+            cmbProvincias.FormattingEnabled = true;
+            cmbProvincias.Location = new Point(452, 294);
+            cmbProvincias.Name = "cmbProvincias";
+            cmbProvincias.Size = new Size(121, 23);
+            cmbProvincias.TabIndex = 55;
             // 
             // label6
             // 
@@ -178,43 +179,43 @@
             label10.TabIndex = 50;
             label10.Text = "Dom calle";
             // 
-            // textBox7
+            // txtDepartamentoDomicilio
             // 
-            textBox7.Location = new Point(452, 204);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(125, 23);
-            textBox7.TabIndex = 49;
+            txtDepartamentoDomicilio.Location = new Point(452, 204);
+            txtDepartamentoDomicilio.Name = "txtDepartamentoDomicilio";
+            txtDepartamentoDomicilio.Size = new Size(125, 23);
+            txtDepartamentoDomicilio.TabIndex = 49;
             // 
-            // textBox8
+            // txtPisoDomicilio
             // 
-            textBox8.Location = new Point(452, 156);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(125, 23);
-            textBox8.TabIndex = 48;
+            txtPisoDomicilio.Location = new Point(452, 156);
+            txtPisoDomicilio.Name = "txtPisoDomicilio";
+            txtPisoDomicilio.Size = new Size(125, 23);
+            txtPisoDomicilio.TabIndex = 48;
             // 
-            // textBox9
+            // txtAlturaDomicilio
             // 
-            textBox9.Location = new Point(452, 108);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(125, 23);
-            textBox9.TabIndex = 47;
+            txtAlturaDomicilio.Location = new Point(452, 108);
+            txtAlturaDomicilio.Name = "txtAlturaDomicilio";
+            txtAlturaDomicilio.Size = new Size(125, 23);
+            txtAlturaDomicilio.TabIndex = 47;
             // 
-            // textBox10
+            // txtNombreCalleDomicilio
             // 
-            textBox10.Location = new Point(452, 67);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(125, 23);
-            textBox10.TabIndex = 46;
+            txtNombreCalleDomicilio.Location = new Point(452, 67);
+            txtNombreCalleDomicilio.Name = "txtNombreCalleDomicilio";
+            txtNombreCalleDomicilio.Size = new Size(125, 23);
+            txtNombreCalleDomicilio.TabIndex = 46;
             // 
-            // button1
+            // btnRegistrar
             // 
-            button1.Location = new Point(646, 367);
-            button1.Name = "button1";
-            button1.Size = new Size(123, 64);
-            button1.TabIndex = 45;
-            button1.Text = "REGISTRAR";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnRegistrar.Location = new Point(646, 367);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(123, 64);
+            btnRegistrar.TabIndex = 45;
+            btnRegistrar.Text = "REGISTRAR";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += button1_Click;
             // 
             // label4
             // 
@@ -261,33 +262,33 @@
             label1.TabIndex = 40;
             label1.Text = "Nombre";
             // 
-            // textBox5
+            // txtImagenUrlPersona
             // 
-            textBox5.Location = new Point(109, 159);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(125, 23);
-            textBox5.TabIndex = 39;
+            txtImagenUrlPersona.Location = new Point(109, 159);
+            txtImagenUrlPersona.Name = "txtImagenUrlPersona";
+            txtImagenUrlPersona.Size = new Size(125, 23);
+            txtImagenUrlPersona.TabIndex = 39;
             // 
-            // textBox3
+            // txtNumeroDniPersona
             // 
-            textBox3.Location = new Point(109, 201);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 23);
-            textBox3.TabIndex = 38;
+            txtNumeroDniPersona.Location = new Point(109, 201);
+            txtNumeroDniPersona.Name = "txtNumeroDniPersona";
+            txtNumeroDniPersona.Size = new Size(125, 23);
+            txtNumeroDniPersona.TabIndex = 38;
             // 
-            // textBox2
+            // txtApellidoPersona
             // 
-            textBox2.Location = new Point(109, 103);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 23);
-            textBox2.TabIndex = 37;
+            txtApellidoPersona.Location = new Point(109, 103);
+            txtApellidoPersona.Name = "txtApellidoPersona";
+            txtApellidoPersona.Size = new Size(125, 23);
+            txtApellidoPersona.TabIndex = 37;
             // 
-            // textBox1
+            // txtNombrePersona
             // 
-            textBox1.Location = new Point(109, 62);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 23);
-            textBox1.TabIndex = 36;
+            txtNombrePersona.Location = new Point(109, 62);
+            txtNombrePersona.Name = "txtNombrePersona";
+            txtNombrePersona.Size = new Size(125, 23);
+            txtNombrePersona.TabIndex = 36;
             // 
             // Form3
             // 
@@ -296,32 +297,32 @@
             ClientSize = new Size(800, 450);
             Controls.Add(textBox4);
             Controls.Add(label11);
-            Controls.Add(comboBox3);
+            Controls.Add(cmbPartidos);
             Controls.Add(label13);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(button2);
-            Controls.Add(comboBox2);
+            Controls.Add(dtmFechaNacimiento);
+            Controls.Add(btnVolverAtras);
+            Controls.Add(cmbLocalidades);
             Controls.Add(label12);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbProvincias);
             Controls.Add(label6);
             Controls.Add(label7);
             Controls.Add(label8);
             Controls.Add(label9);
             Controls.Add(label10);
-            Controls.Add(textBox7);
-            Controls.Add(textBox8);
-            Controls.Add(textBox9);
-            Controls.Add(textBox10);
-            Controls.Add(button1);
+            Controls.Add(txtDepartamentoDomicilio);
+            Controls.Add(txtPisoDomicilio);
+            Controls.Add(txtAlturaDomicilio);
+            Controls.Add(txtNombreCalleDomicilio);
+            Controls.Add(btnRegistrar);
             Controls.Add(label4);
             Controls.Add(label5);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox5);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtImagenUrlPersona);
+            Controls.Add(txtNumeroDniPersona);
+            Controls.Add(txtApellidoPersona);
+            Controls.Add(txtNombrePersona);
             Name = "Form3";
             Text = "Form3";
             Load += Form3_Load;
@@ -333,31 +334,31 @@
 
         private TextBox textBox4;
         private Label label11;
-        private ComboBox comboBox3;
+        private ComboBox cmbPartidos;
         private Label label13;
-        private DateTimePicker dateTimePicker1;
-        private Button button2;
-        private ComboBox comboBox2;
+        private DateTimePicker dtmFechaNacimiento;
+        private Button btnVolverAtras;
+        private ComboBox cmbLocalidades;
         private Label label12;
-        private ComboBox comboBox1;
+        private ComboBox cmbProvincias;
         private Label label6;
         private Label label7;
         private Label label8;
         private Label label9;
         private Label label10;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private Button button1;
+        private TextBox txtDepartamentoDomicilio;
+        private TextBox txtPisoDomicilio;
+        private TextBox txtAlturaDomicilio;
+        private TextBox txtNombreCalleDomicilio;
+        private Button btnRegistrar;
         private Label label4;
         private Label label5;
         private Label label3;
         private Label label2;
         private Label label1;
-        private TextBox textBox5;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtImagenUrlPersona;
+        private TextBox txtNumeroDniPersona;
+        private TextBox txtApellidoPersona;
+        private TextBox txtNombrePersona;
     }
 }

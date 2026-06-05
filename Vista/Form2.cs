@@ -23,7 +23,7 @@ namespace Vista
         private void button1_Click(object sender, EventArgs e)
         {
             categoria1();
-            button5.Visible = true;
+            btnRealizarALtaUsuario.Visible = true;
 
         }
 
@@ -32,23 +32,23 @@ namespace Vista
             Ocultar();
 
             UsuariosABM a = new UsuariosABM();
-            comboBox4.DataSource = a.ObtenerPersonas();
-            comboBox4.DisplayMember = "Nombre";
-            comboBox4.ValueMember = "Id_Persona";
+            cmbPersonas.DataSource = a.ObtenerPersonas();
+            cmbPersonas.DisplayMember = "Nombre";
+            cmbPersonas.ValueMember = "Id_Persona";
 
             OrtorgarRol_Permis f = new OrtorgarRol_Permis();
-            comboBox1.DataSource = f.ObtenerRoles();
-            comboBox1.DisplayMember = "Nombre";
-            comboBox1.ValueMember = "Id_Rol";
+            cmbRoles.DataSource = f.ObtenerRoles();
+            cmbRoles.DisplayMember = "Nombre";
+            cmbRoles.ValueMember = "Id_Rol";
 
-            comboBox2.DataSource = f.ObtenerPermisos();
-            comboBox2.DisplayMember = "Descripcion";
-            comboBox2.ValueMember = "Id_Permisos";
+            cmbPermisos.DataSource = f.ObtenerPermisos();
+            cmbPermisos.DisplayMember = "Descripcion";
+            cmbPermisos.ValueMember = "Id_Permisos";
 
             // USUARIOS
-            comboBox3.DataSource = f.ObtenerUsuarios();
-            comboBox3.DisplayMember = "user_name";
-            comboBox3.ValueMember = "Id_usuario";
+            cmbNombresUsuarios.DataSource = f.ObtenerUsuarios();
+            cmbNombresUsuarios.DisplayMember = "user_name";
+            cmbNombresUsuarios.ValueMember = "Id_usuario";
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -56,17 +56,17 @@ namespace Vista
 
             try
             {
-                if (comboBox3.SelectedValue == null)
+                if (cmbNombresUsuarios.SelectedValue == null)
                 {
                     MessageBox.Show("Seleccioná un usuario");
                     return;
                 }
-                if (comboBox1.SelectedValue == null)
+                if (cmbRoles.SelectedValue == null)
                 {
                     MessageBox.Show("Seleccioná un rol");
                     return;
                 }
-                if (comboBox2.SelectedValue == null)
+                if (cmbPermisos.SelectedValue == null)
                 {
                     MessageBox.Show("Seleccioná un permiso");
                     return;
@@ -74,9 +74,9 @@ namespace Vista
 
                 PermRolDTO dto = new PermRolDTO()
                 {
-                    Id_usuario = Convert.ToInt32(comboBox3.SelectedValue),
-                    Id_Rol = Convert.ToInt32(comboBox1.SelectedValue),
-                    Id_Permisos = Convert.ToInt32(comboBox2.SelectedValue)
+                    Id_usuario = Convert.ToInt32(cmbNombresUsuarios.SelectedValue),
+                    Id_Rol = Convert.ToInt32(cmbRoles.SelectedValue),
+                    Id_Permisos = Convert.ToInt32(cmbPermisos.SelectedValue)
                 };
 
                 BajaRoles f = new BajaRoles();
@@ -107,18 +107,18 @@ namespace Vista
             label7.Visible = true;
 
 
-            comboBox1.Visible = true;
-            comboBox2.Visible = true;
-            comboBox3.Visible = true;
+            cmbRoles.Visible = true;
+            cmbPermisos.Visible = true;
+            cmbNombresUsuarios.Visible = true;
         }
 
         private void Ocultar()
         {
 
-            comboBox1.Visible = false;
-            comboBox2.Visible = false;
-            comboBox3.Visible = false;
-            comboBox4.Visible = false;
+            cmbRoles.Visible = false;
+            cmbPermisos.Visible = false;
+            cmbNombresUsuarios.Visible = false;
+            cmbPersonas.Visible = false;
 
             label2.Visible = false;
             label3.Visible = false;
@@ -133,22 +133,22 @@ namespace Vista
 
 
 
-            textBox1.Visible = false;
-            textBox2.Visible = false;
-            textBox3.Visible = false;
-            textBox5.Visible = false;
-            textBox6.Visible = false;
+            txtNombreUsuario.Visible = false;
+            txtPassword.Visible = false;
+            txtDiasValidezPassword.Visible = false;
+            txtDebeCambiarPassword.Visible = false;
+            txtEstadoActividadUsuario.Visible = false;
 
 
 
 
             label15.Visible = false;
 
-            button5.Visible = false;
-            button6.Visible = false;
-            button7.Visible = false;
-            button8.Visible = false;
-            button9.Visible = false;
+            btnRealizarALtaUsuario.Visible = false;
+            btnRealizarBajaUsuario.Visible = false;
+            btnRealizarALtaPersona.Visible = false;
+            btnRealizarBajaPersona.Visible = false;
+            btnModificacion.Visible = false;
         }
 
         private void categoria2()
@@ -165,15 +165,15 @@ namespace Vista
             label15.Visible = true;
             label7.Visible = true;
 
-            textBox1.Visible = true;
-            textBox3.Visible = true;
-            textBox5.Visible = true;
-            textBox6.Visible = true;
-            comboBox3.Visible = true;
+            txtNombreUsuario.Visible = true;
+            txtDiasValidezPassword.Visible = true;
+            txtDebeCambiarPassword.Visible = true;
+            txtEstadoActividadUsuario.Visible = true;
+            cmbNombresUsuarios.Visible = true;
 
-            button8.Visible = true;
-            button9.Visible = true;
-            button7.Visible = true;
+            btnRealizarBajaPersona.Visible = true;
+            btnModificacion.Visible = true;
+            btnRealizarALtaPersona.Visible = true;
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -184,24 +184,24 @@ namespace Vista
         private void button3_Click(object sender, EventArgs e)
         {
             categoria1();
-            button6.Visible = true;
+            btnRealizarBajaUsuario.Visible = true;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             try
             {
-                if (comboBox3.SelectedValue == null)
+                if (cmbNombresUsuarios.SelectedValue == null)
                 {
                     MessageBox.Show("Seleccioná un usuario");
                     return;
                 }
-                if (comboBox1.SelectedValue == null)
+                if (cmbRoles.SelectedValue == null)
                 {
                     MessageBox.Show("Seleccioná un rol");
                     return;
                 }
-                if (comboBox2.SelectedValue == null)
+                if (cmbPermisos.SelectedValue == null)
                 {
                     MessageBox.Show("Seleccioná un permiso");
                     return;
@@ -209,9 +209,9 @@ namespace Vista
 
                 PermRolDTO dto = new PermRolDTO()
                 {
-                    Id_usuario = Convert.ToInt32(comboBox3.SelectedValue),
-                    Id_Rol = Convert.ToInt32(comboBox1.SelectedValue),
-                    Id_Permisos = Convert.ToInt32(comboBox2.SelectedValue)
+                    Id_usuario = Convert.ToInt32(cmbNombresUsuarios.SelectedValue),
+                    Id_Rol = Convert.ToInt32(cmbRoles.SelectedValue),
+                    Id_Permisos = Convert.ToInt32(cmbPermisos.SelectedValue)
                 };
 
                 OrtorgarRol_Permis f = new OrtorgarRol_Permis();
@@ -227,10 +227,10 @@ namespace Vista
         private void button4_Click(object sender, EventArgs e)
         {
             categoria2();
-            textBox1.Visible = true;
-            comboBox1.Visible = true;
-            comboBox4.Visible = true;
-            textBox2.Visible = true;
+            txtNombreUsuario.Visible = true;
+            cmbRoles.Visible = true;
+            cmbPersonas.Visible = true;
+            txtPassword.Visible = true;
             label3.Visible = true;
             label2.Visible = true;
 
@@ -243,13 +243,13 @@ namespace Vista
         {
             try
             {
-                if (comboBox4.SelectedValue == null || comboBox1.SelectedValue == null)
+                if (cmbPersonas.SelectedValue == null || cmbRoles.SelectedValue == null)
                 {
                     MessageBox.Show("Seleccioná una persona y un rol");
                     return;
                 }
 
-                if (!int.TryParse(textBox3.Text, out int diasValidezPass))
+                if (!int.TryParse(txtDiasValidezPassword.Text, out int diasValidezPass))
                 {
                     MessageBox.Show("Ingrese un número válido para los días de validez.");
                     return;
@@ -258,11 +258,11 @@ namespace Vista
 
                 ABMuser dto = new ABMuser()
                 {
-                    Id_Persona = Convert.ToInt32(comboBox4.SelectedValue),
-                    Id_Rol = Convert.ToInt32(comboBox1.SelectedValue),
+                    Id_Persona = Convert.ToInt32(cmbPersonas.SelectedValue),
+                    Id_Rol = Convert.ToInt32(cmbRoles.SelectedValue),
 
-                    user_name = textBox1.Text.Trim(),
-                    Password = textBox2.Text.Trim(),
+                    user_name = txtNombreUsuario.Text.Trim(),
+                    Password = txtPassword.Text.Trim(),
 
                     DiasValidezPass = diasValidezPass,
                     DebeCambiarPass = true,
@@ -292,7 +292,7 @@ namespace Vista
         {
             try
             {
-                if (comboBox3.SelectedValue == null)
+                if (cmbNombresUsuarios.SelectedValue == null)
                 {
                     MessageBox.Show("Seleccioná un usuario");
                     return;
@@ -300,7 +300,7 @@ namespace Vista
 
                 ABMuser dto = new ABMuser()
                 {
-                    user_name = comboBox3.Text
+                    user_name = cmbNombresUsuarios.Text
 
                 };
 
@@ -326,7 +326,7 @@ namespace Vista
         {
             try
             {
-                if (comboBox3.SelectedValue == null || comboBox1.SelectedValue == null)
+                if (cmbNombresUsuarios.SelectedValue == null || cmbRoles.SelectedValue == null)
                 {
                     MessageBox.Show("Seleccioná un usuario y rol");
                     return;
@@ -334,8 +334,8 @@ namespace Vista
 
                 ABMuser dto = new ABMuser()
                 {
-                    user_name = comboBox3.Text,
-                    Id_Rol = Convert.ToInt32(comboBox1.SelectedValue)
+                    user_name = cmbNombresUsuarios.Text,
+                    Id_Rol = Convert.ToInt32(cmbRoles.SelectedValue)
 
                 };
 
