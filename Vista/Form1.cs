@@ -22,14 +22,14 @@ namespace Vista
 
             Login f = new Login();
 
-            LoginDTO dto = new LoginDTO()
+            LoginDTO credencialesDeSesion = new LoginDTO()
             {
                 user_name = txtNombreUsuario.Text.Trim(),
                 password = txtContraseña.Text.Trim()
             };
 
 
-            bool loginExitoso = f.Login1(dto);
+            bool loginExitoso = f.Login1(credencialesDeSesion);
 
             if (loginExitoso)
             {
