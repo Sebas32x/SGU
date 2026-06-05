@@ -17,7 +17,7 @@ namespace Sistema.Mapp
             return new Usuario
             {
                 user_name = dto.user_name,
-                Password = dto.Password
+                Password = dto.password
             };
         }
 

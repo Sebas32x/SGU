@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             linkLabel1 = new LinkLabel();
-            button1 = new Button();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            btnIniciarSesion = new Button();
+            txtContraseña = new TextBox();
+            txtNombreUsuario = new TextBox();
             label2 = new Label();
             label1 = new Label();
             SuspendLayout();
@@ -46,37 +46,37 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Se olvido la contraseña?";
             // 
-            // button1
+            // btnIniciarSesion
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
-            button1.Location = new Point(301, 259);
-            button1.Name = "button1";
-            button1.Size = new Size(192, 29);
-            button1.TabIndex = 11;
-            button1.Text = "INICIAR SESION";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnIniciarSesion.BackColor = SystemColors.ActiveCaption;
+            btnIniciarSesion.Location = new Point(301, 259);
+            btnIniciarSesion.Name = "btnIniciarSesion";
+            btnIniciarSesion.Size = new Size(192, 29);
+            btnIniciarSesion.TabIndex = 11;
+            btnIniciarSesion.Text = "INICIAR SESION";
+            btnIniciarSesion.UseVisualStyleBackColor = false;
+            btnIniciarSesion.Click += button1_Click;
             // 
-            // textBox2
+            // txtContraseña
             // 
-            textBox2.Location = new Point(301, 203);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(192, 23);
-            textBox2.TabIndex = 10;
+            txtContraseña.Location = new Point(301, 203);
+            txtContraseña.Name = "txtContraseña";
+            txtContraseña.Size = new Size(192, 23);
+            txtContraseña.TabIndex = 10;
             // 
-            // textBox1
+            // txtNombreUsuario
             // 
-            textBox1.Location = new Point(301, 162);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(192, 23);
-            textBox1.TabIndex = 9;
+            txtNombreUsuario.Location = new Point(301, 162);
+            txtNombreUsuario.Name = "txtNombreUsuario";
+            txtNombreUsuario.Size = new Size(192, 23);
+            txtNombreUsuario.TabIndex = 9;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(212, 206);
             label2.Name = "label2";
-            label2.Size = new Size(83, 15);
+            label2.Size = new Size(84, 15);
             label2.TabIndex = 8;
             label2.Text = "CONTRASEÑA";
             // 
@@ -95,9 +95,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(linkLabel1);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnIniciarSesion);
+            Controls.Add(txtContraseña);
+            Controls.Add(txtNombreUsuario);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
@@ -110,9 +110,9 @@
         #endregion
 
         private LinkLabel linkLabel1;
-        private Button button1;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private Button btnIniciarSesion;
+        private TextBox txtContraseña;
+        private TextBox txtNombreUsuario;
         private Label label2;
         private Label label1;
     }

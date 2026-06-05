@@ -13,7 +13,8 @@ namespace Vista
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text))
+            //Comprobacion de espacios o valor null en los textbox:
+            if (string.IsNullOrWhiteSpace(txtNombreUsuario.Text) || string.IsNullOrWhiteSpace(txtContraseña.Text))
             {
                 MessageBox.Show("Por favor, complete todos los campos.", "Campos incompletos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -23,8 +24,8 @@ namespace Vista
 
             LoginDTO dto = new LoginDTO()
             {
-                user_name = textBox1.Text.Trim(),
-                Password = textBox2.Text.Trim()
+                user_name = txtNombreUsuario.Text.Trim(),
+                password = txtContraseña.Text.Trim()
             };
 
 

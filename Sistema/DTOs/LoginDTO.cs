@@ -8,7 +8,7 @@ namespace Sistema.DTOs
     {
         // DTOs transporta datos
         public string user_name { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
+        public string password { get; set; } = string.Empty;
     }
 
 

@@ -4,6 +4,7 @@ using Microsoft.Data.SqlClient;
 using Sistema.DTOs;
 using Datos;
 
+//No deberia estar esto en la capa de datos o sesion?
 namespace Logica
 {
     public class Login
@@ -20,7 +21,7 @@ namespace Logica
 
 
                     cmd.Parameters.AddWithValue("@user_name", dto.user_name);
-                    cmd.Parameters.AddWithValue("@Password", dto.Password);
+                    cmd.Parameters.AddWithValue("@Password", dto.password);
 
 
 
