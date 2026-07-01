@@ -5,7 +5,7 @@ using Datos;
 
 namespace Logica
 {
-    public class OrtorgarRol_Permis
+    public class uhuhu
     {
         public void Otorgar(PermRolDTO dto)
         {
